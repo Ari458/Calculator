@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
     <title>Calculator</title>
     <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style/style_1.css">
@@ -15,44 +15,36 @@
         <div class="bodyPanel">
             <div class="display">
                 <div class="calculation"></div>
-                <input placeholder="00.0" type="text" class="show"/>
+                <input type="text" name="result" id="result" value="" placeholder="0" />
             </div>
             <div class="keypad">
                 <div class="row">
-                    <button>%</button>
-                    <button>CE</button>
-                    <button>C</button>
-                    <button>{x}</button>
+                    <input type="button" value="Clear All" id="clear" />
+                    <input type="button" value="Backspace" id="back">
                 </div>
                 <div class="row">
-                    <button>1/x</button>
-                    <button>x<sup>2</sup></button>
-                    <button><sup>2</sup>√x</button>
-                    <button>÷</button>
+                    <input type="button" class="btn digit 7" value="7" id="7">
+                    <input type="button" class="btn digit 8" value="8" id="8">
+                    <input type="button" class="btn digit 9" value="9" id="9">
+                    <input type="button" class="btn func *" value="*" id="*">
                 </div>
                 <div class="row">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>X</button>
+                    <input type="button" class="btn digit 4" value="4" id="4">
+                    <input type="button" class="btn digit 5" value="5" id="5">
+                    <input type="button" class="btn digit 6" value="6" id="6">
+                    <input type="button" class="btn func -" value="-" id="-">
                 </div>
                 <div class="row">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>-</button>
+                    <input type="button" class="btn digit 1" value="1" id="1">
+                    <input type="button" class="btn digit 2" value="2" id="2">
+                    <input type="button" class="btn digit 3" value="3" id="3">
+                    <input type="button" class="btn func +" value="+" id="+">
                 </div>
                 <div class="row">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>+</button>
-                </div>
-                <div class="row">
-                    <button>+/-</button>
-                    <button>0</button>
-                    <button>.</button>
-                    <button>=</button>
+                    <input type="button" class="btn digit 0" value="0" id="0">
+                    <input type="button" class="btn func ." value="." id=".">
+                    <input type="button" class="btn func /" value="/" id="/">
+                    <input type="button" value="=" id="equal">
                 </div>
             </div>
         </div>
