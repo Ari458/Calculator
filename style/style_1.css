@@ -33,6 +33,9 @@ body{
 .header{
     width: 100%;
     flex-grow: 1;
+    color: white;
+    font-size: 40px;
+    padding-left: 10px;
 }
 
 
@@ -57,15 +60,24 @@ body{
     direction: rtl;
 }
 
-.show{
-    width: 100%;
-    height: 80px;
-    font-size: 60px;
-    border: 0;
-    direction: rtl;
-    /* caret-color: transparent; */ /*remove the blinking cursor*/
+@font-face {
+    font-family: seven_segement;
+    src: url();
 }
 
+
+#result{
+    width: 100%;
+    height: 90px;
+    font-size: 60px;
+    border: 0;
+    font-family: seven_segement;
+
+}
+
+#result:focus{
+    outline: 0;
+}
 .show:focus{
     outline: 0;
 }
@@ -86,14 +98,39 @@ body{
     display: flex;
     justify-content: center;
     flex-grow: 1;
+    font-size: 30px;
 }
 
-button{
+.btn,#equal,#clear,#back{
     border: 0;
     flex-grow: 1;
     color: white;
-    font-size: 30px;
+    font-size: 100%;
     background: transparent;
 }
 
+
+.btn:hover,#equal:hover,#clear:hover,#back:hover{
+    transition: 1s;
+    border-radius: 10px;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.btn:active,#equal:active,#clear:active,#back:active{
+    transition: 1s;
+    border-radius: 10px;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+/* .btn:focus,#equal:focus,#clear:focus,#back:focus{
+    transition: 0.1s;
+    border-radius: 10px;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: rgba(0, 0, 0, 0.2);
+    color: black;
+} */
 
